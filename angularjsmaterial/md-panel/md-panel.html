@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+  
+  
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+  
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="md-padding paneldemoBasicUsage" ng-controller="BasicDemoCtrl as ctrl" ng-app="MyApp">
+        <p>
+          A panel can be used to create dialogs, menus, and other overlays.
+        </p>
+        <h2>Options</h2>
+        <div flex="33">
+          <md-checkbox ng-model="ctrl.disableParentScroll">Disable Parent Scroll</md-checkbox>
+        </div>
+      
+        <div class="demo-md-panel-content">
+          <md-button class="md-primary md-raised demo-dialog-open-button" ng-click="ctrl.showDialog($event)">
+            Dialog
+          </md-button>
+          <md-button class="md-primary md-raised demo-menu-open-button" ng-click="ctrl.showMenu($event)">
+            Select Menu
+          </md-button>
+      
+          <p>Your favorite dessert is: {{ ctrl.selected.favoriteDessert }}</p>
+        </div>
+      <script type="text/ng-template" id="panel.tmpl.html"><div role="dialog" aria-label="Eat me!" layout="column" layout-align="center center">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2>Surprise!</h2>
+          </div>
+        </md-toolbar>
+      
+        <div class="demo-dialog-content">
+          <p>
+            You hit the secret button. Here's a donut:
+          </p>
+      
+          <div layout="row" >
+            <img flex alt="Delicious donut" src="img/donut.jpg">
+          </div>
+        </div>
+      
+        <div layout="row" class="demo-dialog-button">
+          <md-button md-autofocus flex class="md-primary" ng-click="ctrl.closeDialog()">
+            Close
+          </md-button>
+        </div>
+      </div>
+      </script></div>
+</body>
+</html>

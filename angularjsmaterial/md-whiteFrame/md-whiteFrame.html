@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+  
+  
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+  
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+    <script src="script.js"></script>
+<body>
+    <div layout="row" layout-padding="" layout-wrap="" layout-margin="" ng-cloak="" layout-align="space-around" ng-controller="DemoCtrl as ctrl" class="whiteframedemoDirectiveInterpolation" ng-app="MyApp">
+        <div class="padded" md-whiteframe="{{ctrl.elevation}}" flex="100" flex-gt-sm="50" layout="column" layout-align="center center">
+          <span ng-non-bindable="">md-whiteframe="{{ctrl.elevation}}"</span>
+          <span>md-whiteframe="{{ctrl.elevation}}"</span>
+          <span>Increments through the available elevations</span>
+        </div>
+        <div class="padded" md-whiteframe="{{height}}" flex="100" flex-gt-sm="50" layout="column" layout-align="center center" ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3">
+          <span ng-non-bindable="">md-whiteframe="{{height}}"</span>
+          <span>md-whiteframe="{{height}}"</span>
+          <span>Hover to toggle</span>
+        </div>
+        <div class="padded" md-whiteframe="{{ctrl.showFrame}}" flex="100" flex-gt-sm="50" layout="column" layout-align="center center" ng-click="ctrl.toggleFrame()">
+          <span ng-non-bindable="">md-whiteframe="{{ctrl.showFrame}}"</span>
+          <span>md-whiteframe="{{ctrl.showFrame}}"</span>
+          <span>Set to -1 to remove elevation shadow, click to toggle</span>
+        </div>
+      </div>
+</body>
+</html>

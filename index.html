@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+ <!-- Angular Material CSS now available via Google CDN; version 1.2.1 used here -->
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+
+
+ <!-- Angular Material Dependencies -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+
+ <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+ <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+ <script src="script.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <button ng-click="func1()"><a href="#!Training"></a>Training</button>
+    <button ng-click="func2()"><a href="#!Communication"></a>Communication</button>
+    <ng-include src="'dummyFile.html'"></ng-include>
+    <div ng-view></div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Angular Material CSS now available via Google CDN; version 1.2.1 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+
+
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="md-radiobutton.css">
+</head>
+<body>
+  <div ng-controller="ContactController as ctrl" class="demo-bidi radioButtondemoMultiColumn" ng-app="MyApp">
+    <h2>Contact List</h2>
+    <md-divider></md-divider>
+  
+    <md-radio-group ng-model="ctrl.selectedId" aria-labelledby="selectedUser">
+      <div ng-repeat="person in ctrl.contacts" class="demo-row">
+        <div flex="" layout="row" layout-padding="" layout-align="start center">
+  
+          <div id="{{'demoTitle-' + person.id}}" class="demo-title">
+            {{person.title}}
+          </div>
+          <md-radio-button flex="" ng-value="person.id" class="md-primary" aria-describedby="{{'demoTitle-' + person.id}}">
+            {{person.fullName}}
+          </md-radio-button>
+        </div>
+      </div>
+    </md-radio-group>
+  
+    <md-divider></md-divider>
+    <p class="md-padding md-margin">
+      <label id="selectedUser">Selected User:</label> <span class="demo-checked">{{ctrl.selectedUser()}}</span>
+    </p>
+  </div>
+</body>
+</html>

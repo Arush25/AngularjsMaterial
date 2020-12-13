@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+  
+  
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+  
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="truncatedemoBasicUsage" ng-app="MyApp">
+
+        <div layout-padding="">
+          <p>
+            The <code>md-truncate</code> component can be used within a wide range of existing Material
+            components and supports multiple layout scenarios.
+          </p>
+      
+          <div>
+            <md-toolbar class="md-accent">
+              <div class="md-toolbar-tools">
+                <md-truncate flex="">
+                  Here is an awesome title that will shrink and overflow.
+                </md-truncate>
+      
+                <md-button class="md-icon-button md-fab-mini" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+              </div>
+            </md-toolbar>
+          </div>
+      
+          <p>
+            Note the Toolbar above which uses flex to grow and shrink, or the fake app below which uses
+            absolute positioning.
+          </p>
+      
+          <div id="fake-app">
+            <div class="sidebar">
+              <md-icon md-svg-icon="img/icons/menu.svg" aria-label="Menu"></md-icon>
+              <md-icon md-svg-icon="img/icons/favorite.svg" aria-label="Favorites"></md-icon>
+              <md-icon md-svg-icon="img/icons/more_vert.svg" aria-label="More Options"></md-icon>
+            </div>
+      
+            <div class="app-body">
+              <h2 md-truncate="">My Awesome Application - Page Title</h2>
+      
+              <p>
+                Did you know?
+              </p>
+      
+              <p>
+                Bacon ipsum dolor amet ground round landjaeger kielbasa fatback biltong hamburger shankle
+                shank tenderloin short loin pork. Chicken spare ribs meatball ball tip. Turducken pancetta
+                shank filet mignon ham boudin. Drumstick kevin pork chop ham meatloaf venison. Doner
+                turducken pastrami ham. Fatback beef meatball pork chop.
+              </p>
+      
+              <p>
+                Pastrami turducken spare ribs short ribs. Leberkas pork loin ham hock landjaeger.
+                Porchetta pork chop ham hock turducken beef leberkas. Drumstick pork belly alcatra,
+                andouille meatball salami chuck hamburger ham hock t-bone ham swine cow cupim jerky.
+              </p>
+      
+              <p>
+                Landjaeger pastrami pork chop hamburger swine jowl beef ribs. Alcatra ball tip short loin
+                flank picanha ground round tri-tip porchetta biltong fatback frankfurter swine. Shankle
+                flank short ribs capicola. Frankfurter tongue sausage meatball rump fatback strip steak
+                tenderloin swine venison. Tongue bacon cupim fatback ham.
+              </p>
+            </div>
+      
+            <div class="rightbar">
+              <p>
+                Here is some fantastic information about your application!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

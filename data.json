@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Arush",
+        "address":"Abohar",
+        "dept":"CSE"
+    },
+    {
+        "name":"Aagaz",
+        "address":"Abohar",
+        "dept":"B.Com"
+    },
+    {
+        "name":"Aaryan",
+        "address":"Abohar",
+        "dept":"MBBS"
+    }
+]
